@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DevJobs.API.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace DevJobs.API.Persistence
 {
     /// <summary>
     /// Context vem do Contexto de Dados.
     /// </summary>
-    public class DevJobsContext 
+    public class DevJobsContext : DbContext 
     {   
-        public DevJobsContext()
-        {
-            JobVacancies = new List<JobVacancy>();
+        public DevJobsContext(DbContextOptions<DevJobsContext> options) : base(options){
+
         }
-        public List<JobVacancy> JobVacancies { get; set; }
+        public DbSet<JobVacancy> JobVacancies { get; set; }
     }
 }
