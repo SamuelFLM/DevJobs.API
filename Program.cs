@@ -1,4 +1,5 @@
 using DevJobs.API.Persistence;
+using DevJobs.API.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DevJobsContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DevJobsCs")));
+
+//A partir de agora voce pode utilizar IJob e JobVancy
+builder.Services.AddScoped<IJobVacancyRepository, JobVacancyRepository>();
 
 
 builder.Services.AddControllers();
