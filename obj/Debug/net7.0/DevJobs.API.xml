@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevJobs.API</name>
+    </assembly>
+    <members>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.Post(DevJobs.API.Models.AddJobVacancyInputModel)">
+             <summary>
+             Cadastrar uma vaga de emprego.
+             </summary>
+            <remarks>
+            {
+            "title": ".NET SR",
+            "description": "vaga para sustentação de .net core",
+            "company": "SamuDev",
+            "isRemote": true,
+            "salaryRange": "9000 - 15000"
+            }
+             </remarks>
+             
+             <param name="model">Dados da vaga</param>
+             <returns>Objeto recém-criado</returns>
+             <response code="201">Sucesso.</response>
+             <response code="400">Dados Invalidos.</response>
+        </member>
+        <member name="P:DevJobs.API.Entities.JobVacancy.Id">
+            <summary>
+             Encapsulamento no private set.. para que ninguem fique setando novos valores.
+            </summary>
+        </member>
+        <member name="T:DevJobs.API.Models.AddJobVacancyInputModel">
+            <summary>
+            record: Simplifica a criação de objeto. Class mais enxuta
+            e facilita na parte de comparação.
+            </summary>
+        </member>
+        <member name="M:DevJobs.API.Models.AddJobVacancyInputModel.#ctor(System.String,System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            record: Simplifica a criação de objeto. Class mais enxuta
+            e facilita na parte de comparação.
+            </summary>
+        </member>
+        <member name="T:DevJobs.API.Persistence.DevJobsContext">
+            <summary>
+            Context vem do Contexto de Dados.
+            </summary>
+        </member>
+        <member name="M:DevJobs.API.Persistence.DevJobsContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Se chama fluent api, recomendado para configurar minhas tabelas para o banco de dados.
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:DevJobs.API.Persistence.Migrations.InitialMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:DevJobs.API.Persistence.Migrations.InitialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DevJobs.API.Persistence.Migrations.InitialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:DevJobs.API.Persistence.Migrations.InitialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

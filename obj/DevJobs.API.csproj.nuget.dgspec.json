@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj": {}
+    "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj": {
+    "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
+        "projectUniqueName": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
         "projectName": "DevJobs.API",
-        "projectPath": "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
+        "projectPath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
         "packagesPath": "C:\\Users\\Lazer\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\obj\\",
+        "outputPath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

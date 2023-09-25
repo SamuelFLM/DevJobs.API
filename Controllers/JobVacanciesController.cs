@@ -39,18 +39,18 @@ namespace DevJobs.API.Controllers
         }
 
         /// <summary>
-        ///  Cadastrar uma vaga de emprego.
-        /// <remarks>
-        ///    {
-            ///    "title": ".NET SR",
-            ///    "description": "vaga para sustentação de .net core",
-            ///    "company": "SamuDev",
-            ///    "isRemote": true,
-            ///    "salaryRange": "9000 - 15000"
-        ///    }
-        /// </remarks>
+        /// Cadastrar uma vaga de emprego.
         /// </summary>
-        /// <param name="model"></param>
+        ///<remarks>
+        ///{
+        ///"title": ".NET SR",
+        ///"description": "vaga para sustentação de .net core",
+        ///"company": "SamuDev",
+        ///"isRemote": true,
+        ///"salaryRange": "9000 - 15000"
+        ///}
+        /// </remarks>
+        /// <param name="model">Dados da vaga</param>
         /// <returns>Objeto recém-criado</returns>
         /// <response code="201">Sucesso.</response>
         /// <response code="400">Dados Invalidos.</response>
