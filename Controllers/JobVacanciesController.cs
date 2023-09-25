@@ -38,6 +38,22 @@ namespace DevJobs.API.Controllers
             return Ok(jobVacancy);
         }
 
+        /// <summary>
+        ///  Cadastrar uma vaga de emprego.
+        /// <remarks>
+        ///    {
+            ///    "title": ".NET SR",
+            ///    "description": "vaga para sustentação de .net core",
+            ///    "company": "SamuDev",
+            ///    "isRemote": true,
+            ///    "salaryRange": "9000 - 15000"
+        ///    }
+        /// </remarks>
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns>Objeto recém-criado</returns>
+        /// <response code="201">Sucesso.</response>
+        /// <response code="400">Dados Invalidos.</response>
         [HttpPost]
         public IActionResult Post(AddJobVacancyInputModel model)
         {
@@ -48,6 +64,8 @@ namespace DevJobs.API.Controllers
                 model.IsRemote,
                 model.SalaryRange
             );
+            if (jobVacancy.Title.Length > 30)
+                return BadRequest();
 
             _repository.Add(jobVacancy);
 
@@ -65,7 +83,7 @@ namespace DevJobs.API.Controllers
             jobVacancy.Update(model.Title, model.Description);
 
             _repository.Update(jobVacancy);
-            
+
             return NoContent();
         }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MKulm60LGnw+EpugiKCQuacz6vnpZ7UyePDO4eCjto1c+baSstKt6ZxF1rwr49pE5VK70+9J2qsq7Woy4GK5bg==",
+  "dgSpecHash": "fjxiHHoBjbOfallf9Os3epEmE/fazTCHQ7QdTxoZRvyUs+AgKtIvXP89fTKfPDwjJPCy7+/oWJDzDIk3shPzkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
+  "projectFilePath": "c:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lazer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
