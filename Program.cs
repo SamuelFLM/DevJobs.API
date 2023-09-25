@@ -45,19 +45,20 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
-builder.Host.ConfigureAppConfiguration((hostingContext, config) => {
+builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
+{
+    var connectionString = hostingContext.Configuration.GetConnectionString("DevJobsCs");
 
-    Serilog.Log.Logger = new LoggerConfiguration()
+    loggerConfiguration
         .Enrich.FromLogContext()
         .WriteTo.MSSqlServer(connectionString,
-            sinkOptions: new MSSqlServerSinkOptions() {
+            sinkOptions: new MSSqlServerSinkOptions()
+            {
                 AutoCreateSqlTable = true,
                 TableName = "Logs"
             })
-        .WriteTo.Console()
-        .CreateLogger();
-        
-}).UseSerilog();
+        .WriteTo.Console();
+});
 
 var app = builder.Build();
 
