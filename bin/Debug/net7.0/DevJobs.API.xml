@@ -4,6 +4,39 @@
         <name>DevJobs.API</name>
     </assembly>
     <members>
+        <member name="M:DevJobs.API.Controllers.JobApplicationsController.Post(System.Int32,DevJobs.API.Models.AddJobApplicationInputModel)">
+            <summary>
+            Cadastrar uma aplicação
+            </summary>
+            <remarks>
+            {
+            "applicantName": "Samuel",
+            "applicantEmail": "Samu@gmail.com"
+            "idJobVacancies": 1
+            }
+            </remarks>
+            <param name="id">Id da vaga</param>
+            <param name="model">Dados da aplicação</param>
+            <returns>Objeto recém-criado</returns>
+            <response code="201">Sucesso.</response>
+            <response code="400">Dados Invalidos.</response>
+        </member>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.GetAll">
+            <summary>
+            Obter todas as vagas.
+            </summary>
+            <returns>Todos os dados</returns>
+            <response code="200">Sucesso.</response>
+        </member>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.GetById(System.Int32)">
+            <summary>
+            Obter vaga de emprego por id
+            </summary>
+            <param name="id">id da vaga</param>
+            <returns>Vaga por id</returns>
+            <response code="200">Sucesso.</response>
+            <response code="404">Não encontrado.</response>
+        </member>
         <member name="M:DevJobs.API.Controllers.JobVacanciesController.Post(DevJobs.API.Models.AddJobVacancyInputModel)">
              <summary>
              Cadastrar uma vaga de emprego.
@@ -21,6 +54,22 @@
              <returns>Objeto recém-criado</returns>
              <response code="201">Sucesso.</response>
              <response code="400">Dados Invalidos.</response>
+        </member>
+        <member name="M:DevJobs.API.Controllers.JobVacanciesController.Put(System.Int32,DevJobs.API.Models.UpdateJobVacancyInputModel)">
+            <summary>
+            Alterar uma vaga de emprego
+            </summary>
+            <remarks>
+            {
+            "title": "string",
+            "description": "string"
+            }
+            </remarks>
+            <param name="id">Id Vaga</param>
+            <param name="model">Dados da vaga</param>
+            <returns>No content</returns>
+            <response code="204">Sucesso.</response>
+            <response code="404">Não encontado.</response>
         </member>
         <member name="P:DevJobs.API.Entities.JobVacancy.Id">
             <summary>

@@ -92,8 +92,8 @@ namespace DevJobs.API.Controllers
         /// </summary>
         /// <remarks>
         /// {
-        /// "title": "string",
-        /// "description": "string"
+        /// "title": ".NET JR",
+        /// "description": "Vaga de sustentação .NET JR"
         /// }
         /// </remarks>
         /// <param name="id">Id Vaga</param>

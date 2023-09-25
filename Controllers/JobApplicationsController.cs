@@ -24,8 +24,9 @@ namespace DevJobs.API.Controllers
         /// </summary>
         /// <remarks>
         /// {
-        /// "title": "string",
-        /// "description": "string"
+        /// "applicantName": "Samuel",
+        /// "applicantEmail": "Samu@gmail.com"
+        /// "idJobVacancies": 1
         /// }
         /// </remarks>
         /// <param name="id">Id da vaga</param>
