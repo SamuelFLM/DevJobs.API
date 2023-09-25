@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WSx3RTITtDrmC8DLzY4Qd2MWre7lQsn9l40SN48twSHt9EcSBIImeAhOC7sa9Bh9J8qBRiZHLSGE1DXZsPZnMw==",
+  "dgSpecHash": "MKulm60LGnw+EpugiKCQuacz6vnpZ7UyePDO4eCjto1c+baSstKt6ZxF1rwr49pE5VK70+9J2qsq7Woy4GK5bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\DevJobs\\DevJobs.API\\DevJobs.API.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
+    "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.11\\microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.11\\microsoft.entityframeworkcore.sqlserver.7.0.11.nupkg.sha512",
     "C:\\Users\\Lazer\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[7.0.11, )"
             },
+            "Microsoft.EntityFrameWorkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
             "Microsoft.EntityFrameWorkCore.sqlServer": {
               "target": "Package",
               "version": "[7.0.11, )"

@@ -1,9 +1,15 @@
 using DevJobs.API.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<DevJobsContext>();
+//Db em memory
+// builder.Services.AddDbContext<DevJobsContext>(options => options.UseInMemoryDatabase("Database"));
+
+
+builder.Services.AddDbContext<DevJobsContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DevJobsCs")));
 
 
 builder.Services.AddControllers();

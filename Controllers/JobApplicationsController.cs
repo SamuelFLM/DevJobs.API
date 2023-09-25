@@ -22,13 +22,16 @@ namespace DevJobs.API.Controllers
         [HttpPost]
         public IActionResult Post(int id, AddJobApplicationInputModel model)
         {
-            var jobVacancy = _context.JobVacancies.SingleOrDefault(jv => jv.Id == id);
+            var jobVacancy = _context.JobVacancies
+                .SingleOrDefault(jv => jv.Id == id);
+
             if (jobVacancy == null)
                 return NotFound();
 
             var application = new JobApplication(model.ApplicantName, model.ApplicantEmail, id);
 
-            jobVacancy.Applications.Add(application);
+            _context.JobApplications.Add(application);
+            _context.SaveChanges();
 
             return NoContent();
         }
