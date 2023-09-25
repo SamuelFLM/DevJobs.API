@@ -19,7 +19,20 @@ namespace DevJobs.API.Controllers
         {
             _repository = repository;
         }
-
+        /// <summary>
+        /// Cadastrar uma aplicação
+        /// </summary>
+        /// <remarks>
+        /// {
+        /// "title": "string",
+        /// "description": "string"
+        /// }
+        /// </remarks>
+        /// <param name="id">Id da vaga</param>
+        /// <param name="model">Dados da aplicação</param>
+        /// <returns>Objeto recém-criado</returns>
+        /// <response code="201">Sucesso.</response>
+        /// <response code="400">Dados Invalidos.</response>
         [HttpPost]
         public IActionResult Post(int id, AddJobApplicationInputModel model)
         {

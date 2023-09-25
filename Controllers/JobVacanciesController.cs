@@ -22,12 +22,24 @@ namespace DevJobs.API.Controllers
         {
             _repository = repository;
         }
+        /// <summary>
+        /// Obter todas as vagas.
+        /// </summary>
+        /// <returns>Todos os dados</returns>
+        /// <response code="200">Sucesso.</response>
         [HttpGet]
         public IActionResult GetAll()
         {
             var jobvacancies = _repository.GetAll();
             return Ok(jobvacancies);
         }
+        /// <summary>
+        /// Obter vaga de emprego por id
+        /// </summary>
+        /// <param name="id">id da vaga</param>
+        /// <returns>Vaga por id</returns>
+        /// <response code="200">Sucesso.</response>
+        /// <response code="404">Não encontrado.</response>
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
@@ -59,7 +71,7 @@ namespace DevJobs.API.Controllers
         public IActionResult Post(AddJobVacancyInputModel model)
         {
             Log.Information("POST JobVacancy chamado.");
-            
+
             var jobVacancy = new JobVacancy(
                 model.Title,
                 model.Description,
@@ -75,6 +87,20 @@ namespace DevJobs.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = jobVacancy.Id }, jobVacancy);
         }
 
+        /// <summary>
+        /// Alterar uma vaga de emprego
+        /// </summary>
+        /// <remarks>
+        /// {
+        /// "title": "string",
+        /// "description": "string"
+        /// }
+        /// </remarks>
+        /// <param name="id">Id Vaga</param>
+        /// <param name="model">Dados da vaga</param>
+        /// <returns>No content</returns>
+        /// <response code="204">Sucesso.</response>
+        /// <response code="404">Não encontado.</response>
         [HttpPut("{id}")]
         public IActionResult Put(int id, UpdateJobVacancyInputModel model)
         {
