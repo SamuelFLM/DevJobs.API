@@ -17,7 +17,6 @@
             "salaryRange": "9000 - 15000"
             }
              </remarks>
-             
              <param name="model">Dados da vaga</param>
              <returns>Objeto recém-criado</returns>
              <response code="201">Sucesso.</response>
