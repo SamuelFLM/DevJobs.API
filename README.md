@@ -5,7 +5,7 @@
 
 ## **Desafio de projeto**
 
-**Aplicação responsavel por gerenciar vagas de emprego de programadores.**
+**Aplicação responsavel por gerenciar vagas de emprego de programadores..**
 
 **Contém as seguintes funcionalidades:<br>**
 
