@@ -9,7 +9,7 @@
 
 **Contém as seguintes funcionalidades:<br>**
 
-**Busca,cadastro,edição e detalhes de uma vaga de emprego.. <br>**
+**Busca,cadastro,edição e detalhes de uma vaga de emprego. <br>**
 **Aplicação em uma vaga. <br>**
 
 **Será Desevolvida uma API REST completa. <br>**
